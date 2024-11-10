@@ -2,7 +2,7 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		// Replace this comment with your code
+		// Replace this comment with your code-
 		Math.random();
 		int a = Integer.parseInt(args[0]);
 		int b = Integer.parseInt(args[1]);
