@@ -25,9 +25,8 @@ public class TimeFormat {
 		}
 		String hoursAsString = Integer.toString(hours);
 		String minutesAsString = Integer.toString(minutes);
-		if (hours < 10) {
-			hoursAsString = "0" + hoursAsString;
-		}
+		
+		
 		if (minutes < 10) {
 			minutesAsString = "0" + minutesAsString;
 		}
