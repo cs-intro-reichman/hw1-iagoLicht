@@ -15,21 +15,23 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 		// Replace this comment with the rest of your code
 		String amOrPm = "AM";
+		if (hours >= 12) {
+			amOrPm = "PM";
+		}
 		if (hours > 12) {
 			hours = hours - 12;
-			amOrPm = "PM";
+
+
 		}
 		String hoursAsString = Integer.toString(hours);
 		String minutesAsString = Integer.toString(minutes);
-		if (hours<10) {
-			hoursAsString = "0" + hoursAsString;	
+		if (hours < 10) {
+			hoursAsString = "0" + hoursAsString;
 		}
-		if (minutes<10) {
-			minutesAsString = "0" + minutesAsString;	
+		if (minutes < 10) {
+			minutesAsString = "0" + minutesAsString;
 		}
 		System.out.println(hoursAsString + ":" + minutesAsString + " " + amOrPm);
-		
-			
-		
+
 	}
 }
